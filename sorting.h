@@ -23,12 +23,13 @@ void selectionSort(int data[], int length) {
   for(int i = 0; i < length - 1; i++) {
     mi = i;
     for(int j = i+1; j < length; j++) {
-      if(data[mi] > data[j]) mi = j;
+      if(data[mi] < data[j]) mi = j;
     }
     swap(&data[i], &data[mi]);
     display(data, length);
     printf("\n");
   }
+  printf("\n");
 } 
 
 
@@ -46,6 +47,7 @@ void insertion(int x[],int n){
     display(x,n);
     printf("\n");
   }
+
 }
 
 
