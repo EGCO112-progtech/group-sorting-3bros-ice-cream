@@ -34,6 +34,7 @@ void insertion(int x[],int n){
     display(x,n);
     printf("\n");
   }
+  printf("\n");
 }
 
 void swap(int *a,int *b){
