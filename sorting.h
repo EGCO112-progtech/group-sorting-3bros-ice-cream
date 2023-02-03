@@ -46,6 +46,7 @@ void insertion(int x[],int n){
     display(x,n);
     printf("\n");
   }
+  printf("\n");
 }
 
 
