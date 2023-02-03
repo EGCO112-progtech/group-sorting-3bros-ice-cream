@@ -48,10 +48,21 @@ void bubbleSort(int a[],int n){
 
 int i,j;
 int sorted;
-// how may pair to compare?
-for(j=1;j<=n-1;j++){
- 
-  display(a,n);
+  
+for(i=0;i<n-1;i++){
+  sorted=0;
+  for(j=0;j<n-1-i;j++){
+    if(a[j+1]>a[j]){
+      swap(&a[j+1],&a[j]);
+      sorted=1;
+      
+    }
+    display(a,n);
+  
+  }
+  
+  if(sorted==0) break;
+  printf("\n");
  }
   
 }
