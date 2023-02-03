@@ -47,7 +47,7 @@ void insertion(int x[],int n){
     display(x,n);
     printf("\n");
   }
-
+  printf("\n");
 }
 
 
@@ -68,9 +68,8 @@ for(i=0;i<n-1;i++){
     display(a,n);
   
   }
-  
-  if(sorted==0) break;
   printf("\n");
+  if(sorted==0) break;
  }
   
 }
